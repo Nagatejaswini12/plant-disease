@@ -1,0 +1,19 @@
+# Pinned against PyPI (checked 2026-10-11). Grows phase by phase.
+#
+# Local / Docker:  pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cpu
+# Google Colab:    the notebooks install this file WITHOUT torch/torchvision/numpy/pillow - Colab ships
+#                  its own CUDA builds, and reinstalling torch there is slow and can break the GPU.
+
+torch==2.14.1
+torchvision==0.29.1
+numpy==2.5.4
+pillow==12.3.0
+huggingface_hub==2.2.0
+
+# Phase 2: training
+timm==1.0.30
+scikit-learn==1.9.1
+wandb==0.30.0
+
+# Phase 3: evaluation
+matplotlib==3.11.2

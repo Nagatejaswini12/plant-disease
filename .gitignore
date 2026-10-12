@@ -1,0 +1,7 @@
+# Downloaded data is large; keep only our split file in git.
+data/*
+!data/splits.csv
+
+.venv/
+__pycache__/
+runs/
